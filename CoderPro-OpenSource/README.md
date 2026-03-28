@@ -8,7 +8,7 @@
 🚀 本地驱动 · 🎨 赛博美学 · ⚡ 极速体验  
 🚀 Local-Driven · 🎨 Cyber Aesthetics · ⚡ Lightning Fast
 
-[MIT License](LICENSE) · [Issues](https://github.com/YOUR_USERNAME/CoderPro/issues)
+[MIT License](LICENSE) · [Issues](https://github.com/ZHUKEAHYEW/CoderPro/issues)
 
 [中文](#-项目介绍) | [English](#-introduction)
 
@@ -40,6 +40,10 @@ CoderPro 是一款专为开发者设计的桌面端效率辅助工具，采用 *
 
 ## 🖼️ 功能预览
 
+![CoderPro 应用截图](screenshots/eg.png)
+
+*上图：CoderPro 桌面应用界面展示，包含主悬浮窗、任务管理面板和文本片段面板*
+
 ### 主悬浮窗（反应堆核心）
 - 启动后桌面显示赛博青色高光的悬浮图标
 - 支持拖拽移动，带有发光动画反馈
@@ -69,7 +73,7 @@ CoderPro 是一款专为开发者设计的桌面端效率辅助工具，采用 *
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/YOUR_USERNAME/CoderPro.git
+git clone https://github.com/ZHUKEAHYEW/CoderPro.git
 cd CoderPro
 ```
 
@@ -248,8 +252,8 @@ npm run preview      # 预览构建结果
 
 ## 📧 联系方式
 
-- **项目地址**: https://github.com/YOUR_USERNAME/CoderPro
-- **问题反馈**: https://github.com/YOUR_USERNAME/CoderPro/issues
+- **项目地址**: https://github.com/ZHUKEAHYEW/CoderPro
+- **问题反馈**: https://github.com/ZHUKEAHYEW/CoderPro/issues
 
 ---
 
@@ -319,7 +323,7 @@ CoderPro is a desktop efficiency tool designed specifically for developers, buil
 
 1. **Clone the Project**
 ```bash
-git clone https://github.com/YOUR_USERNAME/CoderPro.git
+git clone https://github.com/ZHUKEAHYEW/CoderPro.git
 cd CoderPro
 ```
 
@@ -498,8 +502,8 @@ This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LI
 
 ## 📧 Contact
 
-- **Project URL**: https://github.com/YOUR_USERNAME/CoderPro
-- **Issues**: https://github.com/YOUR_USERNAME/CoderPro/issues
+- **Project URL**: https://github.com/ZHUKEAHYEW/CoderPro
+- **Issues**: https://github.com/ZHUKEAHYEW/CoderPro/issues
 
 ---
 
