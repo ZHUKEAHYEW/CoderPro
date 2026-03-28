@@ -1,0 +1,50 @@
+{
+  "name": "coderpro",
+  "version": "1.0.0",
+  "description": "面向开发者的桌面端效率辅助工具",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently -k \"vite\" \"wait-on tcp:5173 && electron . --dev\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "build": {
+    "appId": "com.coderpro.app",
+    "productName": "CoderPro",
+    "directories": {
+      "output": "dist_electron"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "lucide-vue-next": "^0.400.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "electron": "^41.0.4",
+    "electron-builder": "^24.13.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.0",
+    "wait-on": "^7.2.0"
+  }
+}

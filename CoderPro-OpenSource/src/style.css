@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局透明背景和无边框拖拽区域 */
+html, body {
+  background: transparent !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  /* 强制 GPU 加速，修复透明背景重绘问题 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.5);
+}
+
+/* 窗口拖拽区域（Electron 特有属性） */
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* 玻璃质感基础卡片 */
+.glass-panel {
+  @apply bg-cyber-panel backdrop-blur-[40px] border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.15)] rounded-2xl bg-glass-gradient;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* 输入框通用样式 */
+.glass-input {
+  @apply bg-black/40 border border-white/10 rounded-xl p-2.5 text-sm focus:border-cyber-cyan/60 focus:bg-black/60 focus:shadow-[0_0_15px_rgba(0,240,255,0.15)] outline-none transition-all duration-300 text-white placeholder-white/30;
+}
+
+/* 按钮通用样式 */
+.glass-btn {
+  @apply px-4 py-2 rounded-xl font-medium text-sm transition-all duration-300 active:scale-95;
+}
+.glass-btn-primary {
+  @apply glass-btn bg-cyber-cyan/90 text-black shadow-[0_0_15px_rgba(0,240,255,0.4)] hover:bg-cyber-cyan hover:shadow-[0_0_25px_rgba(0,240,255,0.6)];
+}
+.glass-btn-secondary {
+  @apply glass-btn bg-white/5 border border-white/10 text-white hover:bg-white/15 hover:border-white/20;
+}
